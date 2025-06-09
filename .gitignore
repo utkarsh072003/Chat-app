@@ -1,0 +1,48 @@
+# === Logs ===
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# === Dependency directories ===
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# === Production build output ===
+dist/
+dist-ssr/
+build/
+client/build/
+server/build/
+client/dist/
+server/dist/
+
+# === Environment variables ===
+.env
+.env.* 
+client/.env
+server/.env
+
+# === Local/OS files ===
+*.local
+.DS_Store
+Thumbs.db
+
+# === Editor settings ===
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# === Optional: lock files ===
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
