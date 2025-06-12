@@ -16,7 +16,7 @@ const port= process.env.PORT|| 8080;
 const databaseURL= process.env.DATABASE_URL;
 
 app.use(cors({
-    origin:[process.env.ORIGIN],
+    origin:["https://chat-app-kappa-sandy.vercel.app"],
     methods:["GET","POST","PUT","PATCH","DELETE"],
     credentials:true
 }))
