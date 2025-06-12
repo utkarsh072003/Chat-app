@@ -6,7 +6,7 @@ import Channel from "./models/ChannelModel.js";
 const setupSocket =(server) =>{
   const io = new SocketIOServer(server,{
     cors:{
-        origin: process.env.ORIGIN,
+        origin: [https://chat-app-kappa-sandy.vercel.app/chat],
         methods:["GET", "POST"],
         credentials:true,
     }
