@@ -1,27 +1,25 @@
-export const HOST= import.meta.env.VITE_SERVER_URL
+// Base URL of your deployed backend
+export const HOST = "https://chat-app-1-946a.onrender.com";
 
-export const AUTH_ROUTES= "api/auth";
-export const SIGNUP_ROUTE= `${AUTH_ROUTES}/signup`
-export const LOGIN_ROUTE= `${AUTH_ROUTES}/login`
-export const GET_USR_INFO=`${AUTH_ROUTES}/user-info`
-export const UPDATE_PROFILE_ROUTE= `${AUTH_ROUTES}/update-profile`
-export const ADD_PROFILE_IMAGE_ROUTE =`${AUTH_ROUTES}/add-profile-image`
-export const REMOVE_PROFILE_IMAGE_ROUTE=`${AUTH_ROUTES}/remove-profile-image`
-export const LOGOUT_ROUTE = `${AUTH_ROUTES}/logout`
+// Auth Routes
+export const SIGNUP_ROUTE = `${HOST}/api/auth/signup`;
+export const LOGIN_ROUTE = `${HOST}/api/auth/login`;
+export const GET_USR_INFO = `${HOST}/api/auth/user-info`;
+export const UPDATE_PROFILE_ROUTE = `${HOST}/api/auth/update-profile`;
+export const ADD_PROFILE_IMAGE_ROUTE = `${HOST}/api/auth/add-profile-image`;
+export const REMOVE_PROFILE_IMAGE_ROUTE = `${HOST}/api/auth/remove-profile-image`;
+export const LOGOUT_ROUTE = `${HOST}/api/auth/logout`;
 
+// Contact Routes
+export const SEARCH_CONTACTS_ROUTES = `${HOST}/api/contacts/search`;
+export const GET_DM_CONTACTS_ROUTES = `${HOST}/api/contacts/get-contacts-for-dm`;
+export const GET_ALL_CONTACTS_ROUTES = `${HOST}/api/contacts/get-all-contacts`;
 
-export const CONTACTS_ROUTES = "api/contacts";
-export const SEARCH_CONTACTS_ROUTES = `${CONTACTS_ROUTES}/search`
-export const  GET_DM_CONTACTS_ROUTES=`${CONTACTS_ROUTES}/get-contacts-for-dm`
-export const GET_ALL_CONTACTS_ROUTES=`${CONTACTS_ROUTES}/get-all-contacts`
+// Message Routes
+export const GET_ALL_MESSAGES_ROUTE = `${HOST}/api/messages/get-messages`;
+export const UPLOAD_FILE_ROUTE = `${HOST}/api/messages/upload-file`;
 
-
-export const MESSAGES_ROUTES = "api/messages";
-export const GET_ALL_MESSAGES_ROUTE = `${MESSAGES_ROUTES}/get-messages`
-export const UPLOAD_FILE_ROUTE= `${MESSAGES_ROUTES}/upload-file`
-
-
-export const CHANNEL_ROUTES='api/channel';
-export const CREATE_CHANNEL_ROUTE=`${CHANNEL_ROUTES}/create-channel`
-export const GET_USER_CHANNELS_ROUTE=`${CHANNEL_ROUTES}/get-user-channels`
-export const GET_CHANNEL_MESSAGES = `${CHANNEL_ROUTES}/get-channel-messages`
+// Channel Routes
+export const CREATE_CHANNEL_ROUTE = `${HOST}/api/channel/create-channel`;
+export const GET_USER_CHANNELS_ROUTE = `${HOST}/api/channel/get-user-channels`;
+export const GET_CHANNEL_MESSAGES = `${HOST}/api/channel/get-channel-messages`;
